@@ -49,6 +49,7 @@ export default function EditMeeting() {
             <form onSubmit={handleOnSubmit}>
                 {MEETING_FIELDS.map((mf) => (
                     <InputFormRow
+                        dataTestId={mf.name}
                         type={mf.type}
                         key={mf.name}
                         labelName={mf.labelName}
